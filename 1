@@ -1,0 +1,26 @@
+package bookstore;
+
+import java.util.Scanner;
+
+public class TestClass {
+	static Scanner myScanner=new Scanner(System.in);
+
+	public static void main(String[] args) {
+  int[][] twoDArr=new int[2][4];
+		System.out.println("Please give your input:");
+		for(int row=0;row<2;row++){
+			for(int column=0;column<4;column++){
+				System.out.print("twoDArray["+row+"]["+column+"]:");  
+				twoDArr[row][column]=myScanner.nextInt();
+			}
+		}
+		for (int row=0;row<2;row++){
+			for(int column=0;column<4;column++){
+				System.out.print(twoDArr[row][column]+"\t");
+			}
+			System.out.println("\n");
+		}
+	
+	}
+
+}
